@@ -33,6 +33,34 @@ If you wish to destory all the resources that terraform created, use this
 
     terraform destroy
     
+## How to use?
+After building stack you will get API endpoint as an output.
+
+you can use postman to post a request to API or use any programming language to interact with API
+
+If using postman,
+
+In url box, Enter the API endpoint followed by /app
+
+Select method as POST. In Body select raw and type json
+
+Enter sample input:
+
+    {
+    "url":"http://google.com",
+    "id":"google"
+    }
+    
+now when you hit send button, You will get http 200 response when data added to dynamodb database 
+
+#### Verify 
+
+Paste the API endpoint in browser followed by key i.e. google in this case (use your api endpoint here)
+
+    https://<apikey>.execute-api.ap-south-1.amazonaws.com/prod/google
+
+Boom you are redirected to google.com
+    
 ## Contribution
 I would love to see what you add to this project and make it better. Everyone is welcome to contribute. 
 Cheers
