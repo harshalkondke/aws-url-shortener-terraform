@@ -1,3 +1,11 @@
+# ==========================================
+#  Title:  URL shortener in AWS with terraform
+#  Author: Harshal Kondke
+#  Date:   13 september 2020
+# ==========================================
+
+# Dynamodb table with config cover in free trial
+# if you want you can increase thhe read write capacity FYI it will add costs
 resource "aws_dynamodb_table" "default" {
   name           = "url-short"
   billing_mode   = "PROVISIONED"
