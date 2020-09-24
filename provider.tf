@@ -5,7 +5,7 @@
 # ==========================================
 
 # we are not using access_keys and secret_key in arguments for security reasons
-# configure you aws cli with your credentials
+# configure your aws cli with your credentials
 # that will solve the problem. 
 provider "aws" {
   region = "ap-south-1"
